@@ -576,7 +576,7 @@ function transparencia() {
 
 
 var popup = L.popup();
-popup.setLatLng([-7.980486, -83.2764937])
+popup.setLatLng([-7.980486, -85.2764937])
 popup.setContent("<h2> Oprime los círculos en esta línea de tiempo para obtener información de lo que sucedió en cada lugar. También, puedes oprimir los círculos azules sobre el mapa.</h2>")
 popup.openOn(mymap);
 
