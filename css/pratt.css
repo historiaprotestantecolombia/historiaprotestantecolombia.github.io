@@ -1,3 +1,7 @@
+body{
+  margin: auto;
+}
+
 #mapaCaja {
   z-index: 0;
 }
