@@ -1,3 +1,10 @@
+body{
+  margin:auto;
+}
+img{
+  color:#000;
+}
+
 #mapaCaja {
   z-index: 0;
 }
