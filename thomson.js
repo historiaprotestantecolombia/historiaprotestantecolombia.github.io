@@ -469,7 +469,7 @@ var Neiva = L.circle([2.926438, -75.288807], {
 
 Neiva.bindPopup("<b>Lugar:</b> Neiva <br><br> <b>Fecha:</b> Enero, 1825 <br><br> <b>Hechos:</b> <br> Thomson llega a Neiva. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/24/bogot-1st-march-1825' target='_blank'> Carta del 1 de marzo, 1825</a>");
 
-Neiva.bindTooltip("Ibarra");
+Neiva.bindTooltip("Neiva");
 
 // Activa el popup para un evento en la línea de tiempo
 var NeivaLinea = document.getElementById('Neiva');
