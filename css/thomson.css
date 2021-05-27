@@ -196,7 +196,7 @@ img{
 }
 
 .textoPopupsMax {
-  font-family: Times;
+  font-family: Times sans-serif Arial;
   font-size:15px;
   background-color: white;
   width: auto;
@@ -210,6 +210,7 @@ img{
 }
 
 .textoPopupsMin {
+  font-family: Times sans-serif Arial;
   background-color: white;
   width: auto;
   height: auto;
