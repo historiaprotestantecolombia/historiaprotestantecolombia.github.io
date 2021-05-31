@@ -333,7 +333,7 @@ var Otavalo = L.circle([0.225793, -78.263709], {
   radius: 10000
 }).addTo(mymap);
 
-Otavalo.bindPopup("<b>Lugar:</b> Otavalo <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br> Thomson llega a Otavalo. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/popayan-1st-january-1825' target='_blank'> Carta del 1 de enero, 1825</a>");
+Otavalo.bindPopup("<div class='textoPopupsMin'><b>Lugar:</b> Otavalo <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br><br> Thomson partió desde Quito con rumbo a Popayán pasando por varios pueblos. Durante el recorrido puede contemplar la belleza natural de la Cordillera de los Andes y hace una descripción corta sobre el clima y la geografía del lugar, pero no escribe mucho sobre lo que sucedió en cada pueblo. En Otavalo distribuye 13 copias del Nuevo Testamento. <br><br> <b>Fuentes:</b> <br><br><a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/popayan-1st-january-1825' target='_blank'> Carta del 1 de enero, 1825</a></div>");
 
 Otavalo.bindTooltip("Otavalo");
 
@@ -352,7 +352,7 @@ var Ibarra = L.circle([0.351153, -78.118712], {
   radius: 10000
 }).addTo(mymap);
 
-Ibarra.bindPopup("<b>Lugar:</b> Ibarra <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br> Thomson llega a Ibarra. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/popayan-1st-january-1825' target='_blank'> Carta del 1 de enero, 1825</a>");
+Ibarra.bindPopup("<div class='textoPopupsMin'><b>Lugar:</b> Ibarra <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br><br> En Ibarra, Thomson vende 22 copias del Nuevo Testamento. <br><br> <b>Fuente:</b><br><br> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/24/bogot-25th-february-1825' target='_blank'> Carta del 25 de febrero, 1825</a></div>");
 
 Ibarra.bindTooltip("Ibarra");
 
@@ -371,7 +371,7 @@ var Tulcan = L.circle([0.814717, -77.715197], {
   radius: 10000
 }).addTo(mymap);
 
-Tulcan.bindPopup("<b>Lugar:</b> Tulcán <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br> Thomson llega a Tulcán. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/24/bogot-1st-march-1825' target='_blank'> Carta del 1 de marzo, 1825</a>");
+Tulcan.bindPopup("<div class='textoPopupsMin'><b>Lugar:</b> Tulcán <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br><br> En Tulcán, Thomson solo vende 2 copias del Nuevo Testamento. Thomson menciona que en estos pueblos pequeños por los que pasaba publicó avisos para la distribución de los libros, pero que no hubo una gran venta debido a que, en general, los habitantes eran pobres y a pocos les gustaba la lectura. Aún así consideraba que mucho se hacía con tener algún tipo de comienzo. <br><br> <b>Fuentes:</b><br><br> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/bogot-8th-february-1825' target='_blank'> Carta del 8 de febrero, 1825</a><br><br><a href= 'http://www.jamesdiegothomson.com/blog/2013/12/24/bogot-25th-february-1825' target='_blank'> Carta del 25 de febrero, 1825</a></div>");
 
 Tulcan.bindTooltip("Tulcan");
 
@@ -390,7 +390,7 @@ var Pasto = L.circle([1.214373, -77.278468], {
   radius: 10000
 }).addTo(mymap);
 
-Pasto.bindPopup("<b>Lugar:</b> Pasto <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br> Thomson llega a Pasto. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/24/bogot-1st-march-1825' target='_blank'> Carta del 1 de marzo, 1825</a>");
+Pasto.bindPopup("<div class='textoPopupsMin'><b>Lugar:</b> Pasto <br><br> <b>Fecha:</b> Diciembre, 1824 <br><br> <b>Hechos:</b> <br><br> En su paso por Pasto, menciona que era un lugar peligroso, y que en todo su recorrido los acompañó una guardia militar, que algunas veces llegó a ser de hasta 40 hombres. En Pasto logra vender 6 copias del Nuevo Testamento. <br><br> <b>Fuentes:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/bogot-8th-february-1825' target='_blank'> Carta del 8 de febrero, 1825</a><br><br><a href= 'http://www.jamesdiegothomson.com/blog/2013/12/24/bogot-25th-february-1825' target='_blank'> Carta del 25 de febrero, 1825</a></div>");
 
 Pasto.bindTooltip("Pasto");
 
@@ -409,7 +409,7 @@ var Popayan = L.circle([2.441645, -76.606092], {
   radius: 15000
 }).addTo(mymap);
 
-Popayan.bindPopup("<b>Lugar:</b> Popayán <br><br> <b>Fecha:</b> Finales de Diciembre, 1824 <br><br> <b>Hechos:</b> <br> Thomson encuentra oposición respecto a la lectura del NT en Popayán.  <br><br> El obispo de Popayán dijo que no se oponía a la circulación de las Escrituras, pero que si le preguntaban su opinión sobre el uso de las mismas les referería a un artículo del Concilio de Trento en donde se prohibía su uso, pues su deber como católico era seguir las reglas de la Iglesia. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/bogot-8th-february-1825' target='_blank'> Carta del 8 de febrero, 1825</a>");
+Popayan.bindPopup("<b>Lugar:</b> Popayán <br><br> <b>Fecha:</b> Finales de Diciembre, 1824 <br><br> <b>Hechos:</b> <br><br>En Popayán, Thomson relata el único encuentro hasta el momento en que hubo oposición a la circulación de las copias del Nuevo Testamento que vendía. La objeción provenía del Obispo de Popayán, quien en una conversación con Thomson le comentó que en un artículo del Concilio de Trento se prohibía el uso de las Escrituras que no tuvieran los comentarios por parte de las autoridades católicas para guiar la lectura. El Obispo mencionó que no se oponía a la circulación de las Escrituras, pero que si alguien le preguntaba su opinión al respecto, les referiría al artículo mencionado por el Concilio, pues ese era su deber como buen católico. Thomson le respondió que entendía cuáles eran sus razones, pero que lamentaba que se presentara oposición a la circulación de las Sagradas Escrituras que Dios había dado gratuitamente para todos, y que estaba convencido de que su lectura traía grandes beneficios. El Obispo replicó que también estaba convencido de los beneficios de la lectura de las Escrituras, pero que estas debían ir acompañadas de comentarios para guiar su lectura. <br><br>En Popayán, Thomson vendió 30 copias del Nuevo Testamento y dejó otras 48 para ser vendidas luego. <br><br> <b>Fuente:</b> <a href= 'http://www.jamesdiegothomson.com/blog/2013/12/25/bogot-8th-february-1825' target='_blank'> Carta del 8 de febrero, 1825</a>");
 
 Popayan.bindTooltip("Popayan");
 
