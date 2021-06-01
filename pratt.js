@@ -182,7 +182,7 @@ var santaMarta = L.circle([11.24079, -74.19904], {
   radius: 10000
 });
 
-santaMarta.bindPopup("<div class='ex1'><h2>Henry Barrington Pratt inicia su recorrido por Colombia</h2> <b>Lugar:</b> Santa Marta <br><br> <b>Fecha:</b> 8 de marzo, 1856 <br><br> <b>Hechos:</b> <br><br> El ministro presbiteriano Henry Barrington Pratt llega a Santa Marta cuando tenía 24 años abordo de un navío llamado \"Caprey\". <br><br><br> <b>Fuentes:</b> <br><br> Francisco Ordoñez, Historia del Cristianismo Evangélico en Colombia (Cali: La Alianza Cristiana y Misionera, 1956), 28. <a href='https://archive.org/details/historiadelcrist00ordo/page/n31/mode/2up' target='_blank'>Ver libro en línea </a> </div>");
+santaMarta.bindPopup("<div class='textoPopupsMax'><h2>Henry Barrington Pratt</h2><h3>Inicio de su recorrido por la Nueva Granada</h3><div class='imagenGeneral'><img src='Imagenes/henryPratt.jpeg' alt='Imagen de Thomson' border= '0px solid #555' width='auto' height='auto'></div><br><br> <b>Lugar:</b> Santa Marta <br><br> <b>Fecha:</b> 8 de marzo, 1856 <br><br> <b>Hechos:</b> <br><br> El ministro presbiteriano Henry Barrington Pratt llega a Santa Marta cuando tenía 24 años abordo de un navío llamado \"Caprey\". <br><br><br> <b>Fuentes:</b> <br><br> Francisco Ordoñez, Historia del Cristianismo Evangélico en Colombia (Cali: La Alianza Cristiana y Misionera, 1956), 28. <a href='https://archive.org/details/historiadelcrist00ordo/page/n31/mode/2up' target='_blank'>Ver libro en línea </a> </div>");
 
 santaMarta.bindTooltip("Santa Marta");
 
