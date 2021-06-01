@@ -196,13 +196,37 @@ img{
   /*background-color: #c3ddd6;*/
 }
 
-div.ex1 {
+.textoPopupsMax {
+  font-family: Times sans-serif Arial;
+  font-size:15px;
   background-color: white;
   width: auto;
-  height: 350px;
+  height: 400px;
   overflow: scroll;
   text-align: justify;
   text-justify: inter-word;
+}
+.textoPopupsMax h1,h2,h3,h4,h5,h6{
+  text-align: center;
+}
+
+.textoPopupsMin {
+  font-family: Times sans-serif Arial;
+  font-size:15px;
+  background-color: white;
+  width: auto;
+  height: auto;
+  overflow: scroll;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.textoPopupsMin h1,h2,h3,h4,h5,h6{
+  text-align: center;
+}
+
+.imagenGeneral{
+  text-align:center;
 }
 
 /* opciones de mapas */
