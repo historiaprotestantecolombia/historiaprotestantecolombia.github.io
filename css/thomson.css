@@ -200,7 +200,7 @@ img{
   font-size:15px;
   background-color: white;
   width: auto;
-  height: 350px;
+  height: 450px;
   overflow: scroll;
   text-align: justify;
   text-justify: inter-word;
@@ -211,6 +211,7 @@ img{
 
 .textoPopupsMin {
   font-family: Times sans-serif Arial;
+  font-size:15px;
   background-color: white;
   width: auto;
   height: auto;
