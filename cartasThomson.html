@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+      background: #000;
+    }
+
+    body {
+      padding-bottom: 40px;
+    }
+
+    h1 {
+      margin-top: 55px;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+    /*Boton de regreso*/
+    /* Animación para esperar que aparezca*/
+    @keyframes regresoFade {
+      0% {opacity: 0;}
+      95% {opacity: 0.1;}
+      100% {opacity: 1;}
+    }
+
+    #volver {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      padding: 3px;
+      text-decoration: none;
+      font-family: monospace;
+      font-size: 25px;
+      animation-name: regresoFade;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+    }
+
+    #volver:hover {
+      border: 5px solid black;
+      border-radius: 15px;
+      color: black;
+      background: #f6eabe;
+      cursor: pointer;
+    }
+
+    #disminuirLetra {
+      margin:auto;
+      width:83%;
+      font-size: 19px;
+    }
+
+    #myimage {
+      display: none;
+    }
+
+    .header {
+      font-family: monospace;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    /* Estilo de los botones de páginas */
+    .boton {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .boton:hover {
+      background-color: #ddd;
+    }
+
+    .boton.activo {
+      background-color: #666;
+      color: white;
+    }
+
+    /* Estilo de artículo de prensa*/
+    .contenedorArticuloPrensa {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      margin: auto;
+      width: 95%;
+      overflow: auto;
+    }
+
+    .contenidoArticuloPrensa {
+      display: none;
+    }
+
+
+    /*Estilo de Lupa*/
+    .img-magnifier-container {
+      position: relative;
+    }
+
+    .img-magnifier-glass {
+      position: absolute;
+      border: 3px solid #000;
+      border-radius: 50%;
+      cursor: none;
+      /*Set the size of the magnifier glass:*/
+      width: 170px;
+      height: 170px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header" id="myHeader">
+    <h1>Cartas originales de Thomson</h1>
+    <br>
+    <div id="disminuirLetra"><span>Acá puedes explorar algunas de las cartas originales que Thomson escribió desde Bogotá. En orden, se encuentran las cartas del 25 de febrero, 5 y 7 de abril de 1825.</span></div>
+    <br><br>
+    <button class="boton activo" onclick="paginaUno()">1</button>
+    <button class="boton" onclick="paginaDos()">2</button>
+    <button class="boton" onclick="paginaTres()">3</button>
+    <button class="boton" onclick="paginaCuatro()">4</button>
+  </div>
+<br>
+  <div class='contenedorArticuloPrensa'>
+    <a href="thomson.html" id="volver">Regresar</a>
+    <div class='img-magnifier-container'>
+      <img id='paginaUno' class="contenidoArticuloPrensa fade" src='Imagenes/febrero25_1.JPG' width='100%'>
+      <img id='paginaDos' class="contenidoArticuloPrensa fade" src='Imagenes/febrero25_2.JPG' width='100%'>
+      <img id='paginaTres' class="contenidoArticuloPrensa fade" src='Imagenes/febrero25_3.JPG' width='100%'>
+      <img id='paginaCuatro' class="contenidoArticuloPrensa fade" src='Imagenes/febrero25_4.JPG' width='100%'>
+    </div>
+  </div>
+</body>
+
+<script>
+  var header = document.getElementById("myHeader");
+  var botones = header.getElementsByClassName("boton");
+  for (var i = 0; i < botones.length; i++) {
+    botones[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("activo");
+      current[0].className = current[0].className.replace(" activo", "");
+      this.className += " activo";
+    });
+  }
+  var mostrarLupa;
+
+  function paginaUno() {
+    mostrarLupa = document.getElementsByClassName("img-magnifier-glass");
+    for (var i = 0; i < mostrarLupa.length; i++) {
+      mostrarLupa[i].style.display = "none";
+    }
+    document.getElementById("paginaDos").style.display = 'none';
+    document.getElementById("paginaTres").style.display = 'none';
+    document.getElementById("paginaCuatro").style.display = 'none';
+    document.getElementById("paginaUno").style.display = 'initial';
+    magnify("paginaUno", 2.7);
+  }
+
+  function paginaDos() {
+    mostrarLupa = document.getElementsByClassName("img-magnifier-glass");
+    for (var i = 0; i < mostrarLupa.length; i++) {
+      mostrarLupa[i].style.display = "none";
+    }
+    document.getElementById("paginaUno").style.display = 'none';
+    document.getElementById("paginaTres").style.display = 'none';
+    document.getElementById("paginaCuatro").style.display = 'none';
+    document.getElementById("paginaDos").style.display = 'initial';
+    magnify("paginaDos", 2.7);
+  }
+
+  function paginaTres() {
+    mostrarLupa = document.getElementsByClassName("img-magnifier-glass");
+    for (var i = 0; i < mostrarLupa.length; i++) {
+      mostrarLupa[i].style.display = "none";
+    }
+    document.getElementById("paginaUno").style.display = 'none';
+    document.getElementById("paginaDos").style.display = 'none';
+    document.getElementById("paginaCuatro").style.display = 'none';
+    document.getElementById("paginaTres").style.display = 'initial';
+    magnify("paginaTres", 2.7);
+  }
+
+  function paginaCuatro() {
+    mostrarLupa = document.getElementsByClassName("img-magnifier-glass");
+    for (var i = 0; i < mostrarLupa.length; i++) {
+      mostrarLupa[i].style.display = "none";
+    }
+    document.getElementById("paginaUno").style.display = 'none';
+    document.getElementById("paginaDos").style.display = 'none';
+    document.getElementById("paginaTres").style.display = 'none';
+    document.getElementById("paginaCuatro").style.display = 'initial';
+    magnify("paginaCuatro", 2.7);
+  }
+  /* Initiate Magnify Function
+  with the id of the image, and the strength of the magnifier glass:*/
+  document.getElementById('paginaUno').style.display = "initial";
+  magnify("paginaUno", 2.7);
+
+  function magnify(imgID, zoom) {
+    var img, glass, w, h, bw;
+    img = document.getElementById(imgID);
+    /*create magnifier glass:*/
+    glass = document.createElement("DIV");
+    glass.setAttribute("class", "img-magnifier-glass");
+    /*insert magnifier glass:*/
+    img.parentElement.insertBefore(glass, img);
+    /*set background properties for the magnifier glass:*/
+    glass.style.backgroundImage = "url('" + img.src + "')";
+    glass.style.backgroundRepeat = "no-repeat";
+    glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+    bw = 3;
+    w = glass.offsetWidth / 2;
+    h = glass.offsetHeight / 2;
+    /*execute a function when someone moves the magnifier glass over the image:*/
+    glass.addEventListener("mousemove", moveMagnifier);
+    img.addEventListener("mousemove", moveMagnifier);
+    /*and also for touch screens:*/
+    glass.addEventListener("touchmove", moveMagnifier);
+    img.addEventListener("touchmove", moveMagnifier);
+
+    function moveMagnifier(e) {
+      var pos, x, y;
+      /*prevent any other actions that may occur when moving over the image*/
+      e.preventDefault();
+      /*get the cursor's x and y positions:*/
+      pos = getCursorPos(e);
+      x = pos.x;
+      y = pos.y;
+      /*prevent the magnifier glass from being positioned outside the image:*/
+      if (x > img.width - (w / zoom)) {
+        x = img.width - (w / zoom);
+      }
+      if (x < w / zoom) {
+        x = w / zoom;
+      }
+      if (y > img.height - (h / zoom)) {
+        y = img.height - (h / zoom);
+      }
+      if (y < h / zoom) {
+        y = h / zoom;
+      }
+      /*set the position of the magnifier glass:*/
+      glass.style.left = (x - w) + "px";
+      glass.style.top = (y - h) + "px";
+      /*display what the magnifier glass "sees":*/
+      glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+    }
+
+    function getCursorPos(e) {
+      var a, x = 0,
+        y = 0;
+      e = e || window.event;
+      /*get the x and y positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x and y coordinates, relative to the image:*/
+      x = e.pageX - a.left;
+      y = e.pageY - a.top;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      y = y - window.pageYOffset;
+      return {
+        x: x,
+        y: y
+      };
+    }
+  }
+</script>
+</html>
