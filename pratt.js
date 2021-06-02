@@ -104,7 +104,7 @@ var NuevaGranada1856 = L.tileLayer('https://mapwarper.net/maps/tile/57172/{z}/{x
   tileSize: 512,
   detectRetina: true,
   zoomOffset: -1,
-  attribution: 'map warper, Biblioteca Nacional de Colombia'
+  attribution: 'map warper, Biblioteca Nacional de Colombia, Music © <a href="https://www.bensound.com/">Bensound</a>'
 });
 
 // Mapa de la República de Nueva Granada, 1858
@@ -116,7 +116,7 @@ var NuevaGranada1858 = L.tileLayer('https://mapwarper.net/maps/tile/57175/{z}/{x
   tileSize: 512,
   detectRetina: true,
   zoomOffset: -1,
-  attribution: 'map warper, Biblioteca Nacional de Colombia'
+  attribution: 'map warper, Biblioteca Nacional de Colombia, Music © <a href="https://www.bensound.com/">Bensound</a>'
 });
 
 
@@ -614,4 +614,15 @@ function ocultarTitulo(){
 }
 function mostrarTitulo(){
   document.getElementById("mapaBaseSelector").style.display = "initial";
+}
+
+function play(){
+  document.getElementById('player').play();
+  document.getElementById('play').style.display = 'none';
+  document.getElementById('pause').style.display = 'initial';
+}
+function pause(){
+  document.getElementById('player').pause();
+  document.getElementById('pause').style.display = 'none';
+  document.getElementById('play').style.display = 'initial';
 }

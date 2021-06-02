@@ -16,6 +16,51 @@ img{
   z-index: 1;
 }
 
+#play{
+position: absolute;
+top:13%;
+left:1%;
+width: 0;
+height: 0;
+border-top: 25px solid transparent;
+border-bottom: 25px solid transparent;
+border-left: 40px solid green;
+border-left-color: black;
+border-radius: 5px;
+cursor:pointer;
+z-index: 2;
+}
+#pause{
+display:none;
+position: absolute;
+top:13.5%;
+left:1%;
+width: 40px;
+height: 40px;
+border-radius: 5px;
+background-color: black;
+cursor:pointer;
+z-index: 2;
+}
+#volMas{
+  position: absolute;
+  top: 19%;
+  left: 3%;
+  font-size: 30px;
+  color: black;
+  cursor:pointer;
+  z-index: 2;
+}
+#volMenos{
+  position: absolute;
+  top: 19%;
+  left: 1%;
+  font-size: 30px;
+  color: black;
+  cursor:pointer;
+  z-index: 2;
+}
+
 /*hr.estilo-linea{
   position:relative;
   top: -58px;

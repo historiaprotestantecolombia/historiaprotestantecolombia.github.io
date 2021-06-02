@@ -106,7 +106,7 @@ var newGranada1819 = L.tileLayer('https://mapwarper.net/maps/tile/54835/{z}/{x}/
   pane: 'mapa1819',
   tileSize: 512,
   zoomOffset: -1,
-  attribution: 'map warper'
+  attribution: 'map warper, Biblioteca Nacional de Colombia, Music © <a href="https://www.bensound.com/">Bensound</a>'
 });
 
 //Mapa de la Carta de Colombia en 1827
@@ -118,7 +118,7 @@ var colombia1827 = L.tileLayer('https://mapwarper.net/maps/tile/55558/{z}/{x}/{y
   tileSize: 512,
   detectRetina: true,
   zoomOffset: -1,
-  attribution: 'map warper'
+  attribution: 'map warper, Biblioteca Nacional de Colombia, Music © <a href="https://www.bensound.com/">Bensound</a>'
 });
 
 
@@ -593,4 +593,15 @@ function ocultarTitulo() {
 
 function mostrarTitulo() {
   document.getElementById("mapaBaseSelector").style.display = "initial";
+}
+
+function play(){
+  document.getElementById('player').play();
+  document.getElementById('play').style.display = 'none';
+  document.getElementById('pause').style.display = 'initial';
+}
+function pause(){
+  document.getElementById('player').pause();
+  document.getElementById('pause').style.display = 'none';
+  document.getElementById('play').style.display = 'initial';
 }

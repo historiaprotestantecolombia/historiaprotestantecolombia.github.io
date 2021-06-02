@@ -18,6 +18,13 @@
 <body>
 <div id="mapaCaja">
   <div id="mapid"></div>
+  <audio id="player" src="audio/adventure.mp3" autoplay loop></audio>
+  <div>
+    <div id="play" onclick="play();"></div>
+    <div id="pause" onclick="pause();"></div>
+    <div id="volMas" onclick="document.getElementById('player').volume += 0.1">+ </div>
+    <div id="volMenos" onclick="document.getElementById('player').volume -= 0.1">–</div>
+  </div>
   <div class="slider-wrapper">
     <span>Opacidad</span> <br>
     <label for="opacity-slider" id="transparencia"></label>

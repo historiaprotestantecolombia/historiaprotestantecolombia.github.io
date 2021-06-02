@@ -62,10 +62,58 @@
       background: #f6eabe;
       cursor: pointer;
     }
+
+    #play{
+    position: absolute;
+    top:10%;
+    left:3%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 40px solid green;
+    border-left-color: white;
+    border-radius: 5px;
+    cursor:pointer;
+    }
+    #pause{
+    display:none;
+    position: absolute;
+    top:10.5%;
+    left:3%;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    cursor:pointer;
+    }
+    #volMas{
+      position: absolute;
+      top: 17%;
+      left: 5%;
+      font-size: 30px;
+      color: white;
+      cursor:pointer;
+    }
+    #volMenos{
+      position: absolute;
+      top: 17%;
+      left: 3%;
+      font-size: 30px;
+      color: white;
+      cursor:pointer;
+    }
   </style>
 </head>
 
 <body>
+  <audio id="player" src="audio/forBetterDays.mp3" autoplay loop></audio>
+  <div>
+    <div id="play" onclick="play();"></div>
+    <div id="pause" onclick="pause();"></div>
+    <div id="volMas" onclick="document.getElementById('player').volume += 0.1">+ </div>
+    <div id="volMenos" onclick="document.getElementById('player').volume -= 0.1">–</div>
+  </div>
 
 <div id="textoContenedor" onclick="mostrarTexto()"> <p id="textoThomson"></p></div>
   <a href="pratt.html" id="continuar"></a>
@@ -74,6 +122,16 @@
 
 </body>
 <script>
+function play(){
+  document.getElementById('player').play();
+  document.getElementById('play').style.display = 'none';
+  document.getElementById('pause').style.display = 'initial';
+}
+function pause(){
+  document.getElementById('player').pause();
+  document.getElementById('pause').style.display = 'none';
+  document.getElementById('play').style.display = 'initial';
+}
   var i = 0;
 
   var txt =
